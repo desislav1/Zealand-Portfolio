@@ -1,0 +1,220 @@
+body {
+    background-image: url('cover.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+  @font-face {
+    font-family: AndromedaTv;
+    src: url(AndromedaTV.woff);
+  }
+  @font-face {
+    font-family: bahn;
+    src: url(bahn.woff);
+  }
+
+  .nadpis
+  {
+      color: white;
+      font-family: AndromedaTv;
+      margin-left: 120px;
+      margin-right: 520px;
+      margin-top: 40px;
+      font-size: 50px;
+  }
+  h1{
+      font-family: bahn;
+      margin-left: 120px;
+      margin-top: 40px;
+      cursor: pointer;
+  }
+
+  header {
+    margin-top: 50px;
+    padding: 0px;
+    display: flex;
+}
+
+ul {
+    list-style:none;
+    display:flex;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.telo{
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+li {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    margin: 0px;
+    margin-top:30px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-family: bahn;
+}
+
+.line{
+    color: white;
+    background-color: white;
+    font-size: 1px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover{
+    font-weight: bold;
+    color: #72c3fa;
+}
+
+.description{
+    font-family: bahn; 
+    color: white;
+    
+
+}
+.faqq{
+    font-family: bahn; 
+    color: white;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.SPACE{
+    margin-left:10px;
+    font-size: 65px;
+    font-weight: bold;
+    margin-top:120px;
+}
+.explore{
+    margin-top:130px;
+    font-size: 50px;
+    margin-left: 555px;
+}
+.des{
+    font-family: bahn; 
+    color: white;
+    text-align:left;
+    margin-top: 5px;
+}
+
+.sign{
+    margin-left:1120px;
+    margin-top:10px;
+    display:flex;
+}
+
+.email{
+    border-radius: 10px;
+    outline: none;
+    padding:10px;
+    margin-top:2px;
+
+}
+
+.subscribe{
+    margin:2px;
+    margin-left: 20px;
+    background-color:rgba(255, 0, 0, 0.301);
+}
+.bottom{
+    margin-top:190px;
+    margin-left:120px;
+    display:flex;
+}
+
+.rights{
+    text-align:center;
+    color: rgba(255, 255, 255, 0.26);
+    font-family: bahn;
+    margin-top:5px;
+}
+
+.faq{
+    margin-bottom:10px;
+    margin-right: 120px;
+}
+
+.spacedude  {
+    position: fixed;
+    animation-name: flyy;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+
+  @keyframes flyy {
+    from {
+      transform: rotate(100deg);
+      left:-100px; top:100px;
+    }
+    to {
+      transform: rotate(350deg);
+      left:1500px; top:300px;
+    }
+  }
+
+  .spacedude2{
+      position:fixed;
+      margin-left:900px;
+
+  }
+
+  .explore:hover{
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  .tickets{
+    background-color:rgba(100, 100, 100, 0.288);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px;
+    color: white;
+    text-align: center;
+    font-family: bahn;
+    margin-top: 100px;
+  }
+
+  .button_ticket{
+      border: 2px solid  rgba(100, 100, 100, 0.815);
+  }
+  .button_ticket:hover{
+      background-color: rgba(100, 100, 100, 0.808)
+  }
+  .h3t{
+      margin-bottom: 20px;
+      font-family: AndromedaTv;
+      font-size: 30px;
+  }
+  .ticket_section {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.sale{
+    position:fixed;
+    margin-left:700px;
+    margin-top: 200px;
+    width: 20px;
+    height: auto;
+}

@@ -1,0 +1,198 @@
+body {
+    background-image: url('imgs/cover.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+  @font-face {
+    font-family: AndromedaTv;
+    src: url(AndromedaTV.woff);
+  }
+  @font-face {
+    font-family: bahn;
+    src: url(bahn.woff);
+  }
+
+  h1
+  {
+      color: white;
+      font-family: AndromedaTv;
+      margin-left: 120px;
+      margin-right: 450px;
+      margin-top: 20px;
+      font-size: 50px;
+      display: flex;
+  }
+
+  header {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+}
+ul {
+    list-style:none;
+    display:flex;
+    margin-right: 15px;
+    margin-top: 7px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+li {
+   margin-left: 3px;
+   margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 8px;
+    margin-top:30px;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: bahn;
+}
+
+
+.line{
+    color: white;
+    background-color: white;
+    font-size: 1px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+a:hover{
+    color: #72c3fa;
+    font-weight: bold;
+}
+
+.sign{
+    margin-left:1140px;
+    margin-top:10px;
+    display:flex;
+}
+
+.bottom{
+    display: flex;
+    margin-left: 100px;
+}
+
+.rights{
+    color: white;
+    font-family: bahn;
+    margin-top:5px;
+    bottom: 0;
+    text-align: center;
+   
+}
+
+h2 {
+    text-align: left;
+    float: left;
+    margin-top: 40px;
+    margin-left: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color:rgba(100, 100, 100, 0.288);
+    color: white;
+    font-family: bahn;
+    font-size: 30px;
+}
+
+
+form {
+    background-color: rgba(100, 100, 100, 0.288);
+    width: 320px;
+    font-size: 17px;
+    border-radius: 15px;
+    margin-right: 200px;
+}
+
+input[type=other] {
+    height: 90px;
+}
+
+input[type=submit] {
+  width: 170px;
+  background-color: rgba(255, 255, 255, 0.26);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+  background-color:#72c4fa96;
+
+}
+
+
+.sign-up-form
+{
+    width:150px;
+    height: 100px;
+    padding: 10px;
+    font-family: bahn;
+    color: White;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 170px;
+    text-align: center;
+
+}
+
+.paragraf {
+    background-color: rgba(100, 100, 100, 0.288);
+    margin-top: 180px;
+    margin-left: 150px;
+    padding: 5px;
+    width: 750px;
+    color: white;
+    border-radius: 15px;
+    font-family: bahn;
+    font-size: 30px;
+    
+    
+}
+
+.mapouter {
+    text-align:right;
+    position: absolute;
+    height:302px;
+    width:286px;
+    float: right;
+    left: 1125px;
+    top: 550px;
+
+
+}
+
+.zaglavie {
+    font-family: bahn;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+.tekst {
+    font-family: bahn;
+    font-size: 20px;
+    width: 750px;
+    font-weight: lighter;
+}
+.hedur {
+    width: 950px;
+}
+.text{
+    font-size:20px;
+    font-weight: lighter;
+}

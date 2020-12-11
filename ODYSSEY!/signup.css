@@ -1,0 +1,178 @@
+body
+
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift Light ;
+    background-image: url(cover.gif);
+    background-size: cover;
+   
+}
+@font-face{
+    font-family: AndromedaTv;
+    src: url(AndromedaTV.woff);
+}
+@font-face{
+    font-family:bahn;
+    src:url(bahn.woff);
+}
+
+  h1
+  {
+      color: rgb(255, 255, 255);
+      font-family: AndromedaTv;
+      margin-left: 120px;
+      margin-right: 520px;
+      margin-top: 40px;
+      font-size: 50px;
+  }
+
+  header {
+    margin-top: 50px;
+    padding: 0px;
+    display: flex;
+}
+ul {
+    list-style:none;
+    display:flex;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+li {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    margin: 0px;
+    margin-top:30px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    font-family: bahn;
+}
+
+.line{
+    color: white;
+    background-color: white;
+    font-size: 1px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover{
+    font-weight: bold;
+    color:#72c3fa;
+}
+
+.description{
+    font-family: bahn; 
+    color: white;
+    margin-top:100px;
+    margin-right: 700px;
+    margin-left: 120px;
+}
+
+.sign{
+    margin-left:1200px;
+    margin-top:15px;
+    background-color: #ffffff00;
+}
+.sign-up-form
+{
+    width:300px;
+    background-color: rgba(100, 100, 100, 0.288);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5% auto 0;
+    text-align:  center;
+    font-family: bahn;
+    color: White;
+
+}
+
+.sign-up-form h3
+{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    padding: 20px;
+    font-family: AndromedaTv;
+    font-size: 25px;
+}
+
+.input-box
+{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    width: 80%;
+    border: 1px solid #ffffff;
+    outline: none;
+}
+button
+{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn
+{
+    background-color: #72c3fa;
+    width: 50%;
+}
+
+.google-btn
+{
+    background-color: #72c3fa;
+    width: 50%;
+}
+a
+{
+    text-decoration: none;
+}
+hr
+{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or
+{
+    color: white;
+    margin: 2px auto 10px;
+}
+
+.bottom {
+    margin-left: 120px;
+   display:flex;
+}
+
+.rights{
+    text-align:center;
+    color: rgba(255, 255, 255, 0.26);
+    font-family: bahn;
+    margin-top:5px;
+}

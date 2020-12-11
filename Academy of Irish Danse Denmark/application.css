@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, h4 {
+    font-family: boucherie-block, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header p, .footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.header a, a:visited{
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-color: #F2F2F2;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.header ul a{
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid#f7f7f7;
+}
+
+.header ul a:hover{
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+.header .logo{
+    float: left;
+    display: block;
+    font-size: 30px;
+    padding: 10px 20px;
+    font-family: boucherie-block, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: 6s;
+}
+
+.header .logo:hover{
+    color: rgb(62, 173, 62);
+}
+
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background-color: black;
+    display: block;
+    height: 2.5px;
+    width: 25px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background: black;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    margin-top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+    background: black;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2 ease-out;
+    margin-top: -5px;
+}
+
+.header .menu-btn{
+    display:none;
+}
+
+/*WHEN THE MENU BUTTON IS IN ITS CHECKED STATE*/
+
+.header .menu-btn:checked ~ .menu{
+    max-height:250px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color:transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    margin-top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    margin-top: 0;
+}
+
+.fa-edit{
+      margin-left: 10px;
+}
+
+.header .logo{
+    transition: 0.2s;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header .logo:hover{
+      font-weight: bold;
+}
+
+.form-container{
+    height: 750px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    
+    /*BOX*/
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.2);
+    background-color:rgb(88, 165, 88);
+    border: 1px solid transparent;
+    
+    /*FONT*/
+    font-family: boucherie-block, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: rgb(255, 255, 255);
+
+    /*ANIMATION*/
+    transition: 0.5s;
+}
+
+.submit-button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.form-container div{
+    padding-top: 10px;
+}
+
+.form-container h1{
+    font-family: boucherie-block, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.form-container .text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: linear-gradient(134deg, #247520, #67ba65);
+    padding: 20px;
+    height: 660px;
+    min-width: 100%;
+    position: absolute;
+}
+
+/*FOOTER CONTENT*/
+
+.footer a{
+    color: #F2F2F2;
+}
+
+.inner_footer {
+    font-size: 14px;
+    color:#F2F2F2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.inner_footer h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.inner_footer h1 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.inner_footer ul li {
+    margin: 7px;
+    color: #F2F2F2;
+}
+
+.inner_footer ul li a:hover {
+    font-weight: bold;
+    color:#F2F2F2;
+    font-size: 15px;
+}
+
+.contact {
+    margin-bottom: 15px;
+}
+
+.social {
+    margin-bottom: 15px;
+}
+
+.box1 .text {
+    margin-left: 20px;
+}
+
+.fa-phone {
+    padding-right: 4px;
+}
+
+.fa-facebook {
+    padding-right: 8px;
+}
+
+.fa-instagram {
+    padding-right: 2px;
+}
+
+.fa-twitter {
+    padding-right: 1px;
+}
+
+.box2 .text {
+    margin-left: 27px;
+}
+
+.fa-map-marker {
+    padding-left: 15px;
+}
+
+.map {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.footer .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: #F2F2F2;
+    padding: 15px;
+}

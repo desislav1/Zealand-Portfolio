@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+
+@font-face {
+    font-family: 'caviar dreams';
+    src: url('/fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('/fonts/caviardreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'satisfy';
+    src: url('/fonts//satisfy-regular-webfont.woff2') format('woff2'),
+         url('/fonts//satisfy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic sc';
+    src: url('/fonts//amaticsc-regular-webfont.woff2') format('woff2'),
+         url('/fonts//amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+h1 h2 p {
+    text-shadow: 0px 0px 1px;
+}
+
+:root {
+    --main:  rgb(153,132,97,73%);
+    --secondary: rgb(35,16,48,73%);
+  }
+
+a:-webkit-any-link  {
+    color: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../style/back.png");
+    background-position: top;
+    background-repeat: revert;
+    background-size: initial
+
+}
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    height: 9vh;
+    background: #dcdcdcf2;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 10px 5px #27272780;
+    -webkit-box-shadow: 0px 10px 5px #27272780;
+    -moz-box-shadow: 0px 10px 5px #27272780;
+}
+
+.toggler {
+    display: none;
+}
+
+.logo img { 
+    height: 2.6rem;
+}
+
+.logo a {
+    color: #000000;
+    position: absolute;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    left: 30px;
+    top: 20px;
+}
+
+nav ul {
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background: #dcdcdcf2;
+    backdrop-filter: blur(4px);
+    right: -100%;
+    transition: all 0.5s ease;
+    box-shadow: 0px 10px 5px #27272780;
+    -webkit-box-shadow: 0px 10px 5px #27272780;
+    -moz-box-shadow: 0px 10px 5px #27272780;
+}   
+
+nav li {
+    margin-top: 5.5em;
+}
+
+nav li a {
+    color: #000000 !important;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "caviar dreams";
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #667179;
+    transition: ease-in .1s;
+}
+
+.toggler:checked~nav ul {
+    right: 0;
+}
+
+a:hover {
+    font-size: 0.9em;
+    transition: ease-in .1s;
+}
+
+#utest {
+    margin-left: 1em;
+}
+
+/* .underline { 
+    text-decoration: underline !important;
+    color: #b31010;
+    font-size: 1.3em;
+} */
+
+.burger {
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.spacing {
+    width: 90%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.introduction {
+    margin-top: 7em;
+    
+}
+
+.text_underline {
+    text-decoration: underline;
+    font-family: "amatic sc";
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.team_member_name { 
+    color: #ffffff;
+    font-family: "caviar dreams";
+    margin: auto;
+    font-size: 21px;
+}
+.team_members_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 3em;
+}
+
+.team_members {
+    margin-top: 1em;
+}
+
+.heading_imgs {
+    display: flex;
+    align-items: center;
+    padding:10px
+}
+
+.heading_satisfy {
+    margin-top: 10px;;
+    font-size: 36px;
+    font-family: "satisfy";
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+.heading_imgs h1 {
+    font-family: "satisfy";
+    font-size: 34px;
+    line-height: 25px;
+    margin:auto;
+}
+.project_description {
+    font-size: 20px;
+    font-family: "caviar dreams";
+    color: #ffffff;
+    margin: auto;
+    width: 83%;
+    line-height: 1.4;
+    margin-top: 1em;
+}
+.heading_imgs img {
+    width:55px;
+    margin-left: 2em;
+}
+.text {
+    box-sizing: border-box;
+    background-color: var(--main);
+    backdrop-filter: blur(2px);
+    height: 275px;
+    padding-top: 60px;
+    padding: 60px 7px 7px 7px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+}
+.about {
+    justify-content: center;
+    margin-top: 5vh;
+    background-color: var(--secondary);
+    backdrop-filter: blur(2px);
+    padding-top: 3em;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+}
+
+
+.about .about_me_img {
+    margin-left: 0;
+} 
+
+.about h1 {
+    margin:26.5px
+}
+
+.about img { 
+    margin: 18.5px;
+    margin-left: 47px;
+}
+
+hr {
+    margin-top: 26px;
+}
+
+.myRole {
+    margin-top: 1em;
+}
+
+#webprojects {
+    margin-top: 10vh;
+    background-color: var(--main);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+}
+#hireMe { 
+    margin-top: 10vh;
+    background: #dcdcdcf2;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+    width: 100%;
+}
+
+#hireMe h1{
+    color: #000000
+}
+#hireMe p{
+    color: #000000
+}
+
+#odessay {
+    background: var(--secondary);
+    margin-top: 10vh;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+}
+
+#modus {
+    background-color: var(--secondary);
+    margin-top: 10vh;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+}
+
+#center {
+    text-align: center;
+}
+
+.info {
+    margin-top: 1em;
+}
+
+#white {
+    color: #000000;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.heading h1 {
+    color: #E5E5E5;
+    margin: auto;
+    font-size: 33px;
+}
+
+.introduction p {
+    color: #E5E5E5;
+ font-size: 23px;
+ font-family: "Caviar Dreams";
+}
+
+.introduction h1 {
+    font-family: "satisfy";
+color: #ffffff;
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.introduction h2 {
+    font-family: "caviar dreams";
+    font-size: 18px ;
+    line-height: 28px;
+    text-align: left;
+    color: #E5E5E5;
+
+}
+
+.heading h1 {
+    font-size: 39px;
+    color: #E5E5E5;
+    font-family: "satisfy";
+    margin-left: 24px;
+}
+h1 {
+    color: #E5E5E5;
+    font-family: "Caviar dreams";
+    font-size: 16px;
+}
+
+.italic {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: "calibri";
+    width: 86%;
+    line-height: 1.5;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.about_me_box{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    max-width: 650px;
+}
+
+.row {
+    display: flex;
+    max-width: 18em;
+    margin: auto;
+}
+
+#columnBlock {
+    padding: 0;
+}
+.column {
+    padding: 5px;
+}
+.cursor {
+    margin:10px 0 10px 0;;
+} 
+
+  hr {
+    width:90%;
+    margin: auto; 
+    margin-top: 25px;
+  }
+
+.social-icons a{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6e3e3;
+    margin:20px 10px;
+    border-radius:50%;
+  }
+  .social-icons{
+    display: flex;
+    
+  }
+  .social-icons i,.social i{
+    color:#000000;
+  }
+  .social-icons a:hover{
+    background-color:#000000;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.5s;
+  }
+  .social-icons a:hover i,
+  .social a:hover i 
+{
+    color: #E5E5E5;
+    transition :all ease 0.5s;
+  }
+
+  .social{
+    position: fixed;
+    top:25%;
+    right:0px;
+    transform:translateY(-50%);
+  }
+  .social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding: 0px;
+    line-height:0px;
+    background: #dcdcdcf2;
+    backdrop-filter: blur(4px);
+    border:1px solid #CBCBCB;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+  }
+  .social a:hover{
+    background-color:#000000;
+    transition:all ease 0.5s;
+  }
+  .social i{
+    font-size:20px;
+    color:#2B2B2B;
+  }
+
+  #AIDD {
+    background: var(--main);
+    backdrop-filter: blur(2px);
+     margin-top: 10vh;
+     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 1);
+ }
+ 
+ #tests {
+     margin-left: 1em;
+ 
+ }
+
+ .row {
+    display: flex;
+    max-width: 18em;
+    margin: auto;
+}
+
+#block {
+    display: block;
+}
+#columnBlock {
+    padding: 0;
+}
+.column {
+    padding: 5px;
+}
+/*media*/
+
+@media screen and (min-width: 404px) {
+
+    .row {
+        max-width: 18em;
+    }
+
+    .first {
+        padding: 70px 50px 30px;
+        text-align: center;
+        letter-spacing: 0px;
+        font-size: 18px;
+    }
+  
+
+    .bold {
+        font-size: 9px;
+        padding-bottom: 20px;
+    }
+
+    .submit-button {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    div.gallery img {
+        padding: 5px 20px;
+    }
+
+    .center {
+        top: 35%;
+        font-size: 15px;
+    }
+
+    .center2 {
+        top: 45%;
+        font-size: 11px;
+        text-shadow: 4px 5px 5px black;
+    }
+
+@media screen and (min-width: 900px) {
+
+    h1 {
+    font-size: 1.4em;
+}
+
+    .row {
+        max-width: 34em;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin: auto;
+        margin-right: 40px;
+    }
+
+    nav li a:hover {
+        color: #000000;
+        font-size: 1em;
+    }
